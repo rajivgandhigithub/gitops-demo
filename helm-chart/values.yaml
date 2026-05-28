@@ -1,0 +1,14 @@
+replicaCount: 2
+
+namespace: demo
+
+image:
+  repository: rajiv84docker/gitops-demo
+  tag: v1
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+
+containerPort: 3000
